@@ -35,6 +35,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Home />}></Route>
         <Route path="About" element={<About />}></Route>
         <Route path="Dashboard" element={<Dashboard />}></Route>
       </Routes>
@@ -65,6 +66,14 @@ function App() {
     // <br />
     // <br />
     // <input type='button' onClick={newApp} value='click here'></input>
+  );
+}
+
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
   );
 }
 
